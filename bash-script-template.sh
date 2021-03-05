@@ -15,7 +15,8 @@ version="0.0.1"
 #-------------------------------------------------------------------------------
 # BASH DOCUMENTATION
 # Debugging Bash scripts:
-#   https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html
+#   https://linuxconfig.org/how-to-debug-bash-scripts
+#   https://www.shell-tips.com/bash/debug-script/
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
