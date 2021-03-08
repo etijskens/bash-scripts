@@ -1,0 +1,8 @@
+#!/bin/bash
+# activate the local python virtual env (in ./.venv)
+if [[ $_ == $0 ]]
+then
+    echo "ERROR: This script must be sourced!" >&2
+    exit -1
+fi
+. ./.venv/bin/activate

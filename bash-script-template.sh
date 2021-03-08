@@ -41,10 +41,22 @@ CheckRoot()
 {
 if [ `id -u` != 0 ]
 then
-  echo "ERROR: You must be root user to run this program"
+  echo "ERROR: You must be root user to run this program" >&2
   exit
 fi
 }
+
+#-------------------------------------------------------------------------------
+# CheckSource - Check that this script is sourced. Emit an error message if not.
+CheckSource()
+{}
+if [[ $_ == $0 ]]
+then
+    echo "ERROR: This script must be sourced!" >&2
+    exit -1
+fi
+}
+
 #-------------------------------------------------------------------------------
 # MAIN PROGRAM
 #-------------------------------------------------------------------------------
