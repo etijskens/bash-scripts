@@ -49,11 +49,11 @@ fi
 #-------------------------------------------------------------------------------
 # CheckSource - Check that this script is sourced. Emit an error message if not.
 CheckSource()
-{}
+{
 if [[ $_ == $0 ]]
 then
     echo "ERROR: This script must be sourced!" >&2
-    exit -1
+    exit 1
 fi
 }
 
@@ -69,7 +69,7 @@ msg="Hello world!"
 
 while getopts ":hvV" option; do
   case $option in
-  # options that doe not execute the program body
+  # options that do not execute the program body
     h) # display help
       Help
       exit
